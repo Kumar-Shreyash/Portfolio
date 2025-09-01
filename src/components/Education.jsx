@@ -77,7 +77,7 @@ export const Education = () => {
     {
       degree: "Full Stack Software Development",
       institution: "Masai School, Bengaluru",
-      year: "2023 - Present",
+      year: "Feb 2025 - Present",
       imgSrc: masai,
       alt: "Masai School Logo",
     },
