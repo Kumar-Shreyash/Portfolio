@@ -6,6 +6,7 @@ import { Project } from './components/Project'
 import { Skills } from './components/Skills'
 import { Experience } from './components/Experience'
 import { Contact } from './components/Contact'
+import { Education } from './components/Education'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Skills/>
       <Github/>
       <Project/>
+      <Education/>
       <Experience/>
       <Contact/>
     </>

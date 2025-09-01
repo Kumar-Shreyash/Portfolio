@@ -1,11 +1,10 @@
 import resume from "../assets/Kumar_Shreyash_Resume.pdf";
+import shreyash from "../assets/shreyash.webp";
 
 export const About = () => {
   const handleResumeClick = () => {
-    // Open resume in new tab
     window.open(resume, "_blank");
 
-    // Create a temporary <a> element to download the file
     const link = document.createElement("a");
     link.href = resume;
     link.download = "Kumar_Shreyash_Resume.pdf";
@@ -15,58 +14,76 @@ export const About = () => {
   };
 
   return (
-    <div
+    <section
       id="about"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white px-6 py-12"
+      className="min-h-screen px-6 py-16 bg-white flex flex-col items-center justify-center"
     >
-      <div className="max-w-5xl w-full flex flex-col md:flex-row items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-        {/* Image */}
-        <div className="w-full md:w-1/2">
-          <img
-            src="https://img.freepik.com/premium-vector/young-man-anime-style-character-vector-illustration-design-manga-anime-boy_147933-4722.jpg"
-            alt="Kumar Shreyash"
-            className="w-full h-full object-cover"
-          />
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* Responsive & Hover-Enhanced Profile Image */}
+        <div className="relative group w-64 sm:w-72 aspect-square mx-auto">
+          <div className="rounded-full overflow-hidden border-4 border-green-600 shadow-xl transition-transform duration-500 ease-in-out transform group-hover:scale-105">
+            <img
+              src={shreyash}
+              alt="Kumar Shreyash"
+              className="w-full h-full object-cover cursor-pointer"
+            />
+          </div>
+          <div className="absolute inset-0 rounded-full border-4 border-green-300 opacity-0 group-hover:opacity-100 transition duration-500 z-[-1]" />
         </div>
 
-        {/* Content */}
-        <div className="w-full md:w-1/2 p-10 text-center md:text-left">
-          <div className="mb-6 text-center md:text-left">
-            <h1 className="text-4xl sm:text-5xl font-bold text-green-700 mb-2">
-              Kumar Shreyash
-            </h1>
-            <h3 className="text-2xl text-gray-800 font-semibold">
-              Full Stack Web Developer
-            </h3>
+        {/* About Content */}
+        <div className="text-center md:text-left">
+          <h2 className=" text-4xl sm:text-5xl font-bold text-green-700 mb-4">
+            Kumar Shreyash
+          </h2>
+          <h3 className="text-xl text-gray-800 font-medium mb-6">
+            Full Stack Web Developer 
+          </h3>
+
+          <p className="text-gray-600 mb-4">
+            I’m passionate about building fast, accessible, and scalable web applications. With a strong foundation in JavaScript and modern web technologies, I strive to bring ideas to life with clean and maintainable code.
+          </p>
+
+          {/* Skill Highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div className="bg-green-50 p-4 rounded-lg shadow-sm">
+              <h4 className="text-lg font-semibold text-green-700">Languages</h4>
+              <p className="text-gray-600 text-sm">JavaScript, TypeScript</p>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg shadow-sm">
+              <h4 className="text-lg font-semibold text-green-700">Frameworks</h4>
+              <p className="text-gray-600 text-sm">React, Node.js, Express</p>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg shadow-sm">
+              <h4 className="text-lg font-semibold text-green-700">Tools</h4>
+              <p className="text-gray-600 text-sm">
+                Git, GitHub, Vite, VS Code, Postman, MongoDB
+              </p>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg shadow-sm">
+              <h4 className="text-lg font-semibold text-green-700">Soft Skills</h4>
+              <p className="text-gray-600 text-sm">Problem-solving, Teamwork</p>
+            </div>
           </div>
 
-          <p className="text-gray-600 mb-3">
-            Crafting clean, modern web applications from front to back.
-          </p>
-          <p className="text-gray-600 mb-3">
-            Specializing in JavaScript and the MERN stack.
-          </p>
-          <p className="text-gray-600 mb-6">
-            Constantly learning, building, and improving.
-          </p>
-
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition duration-300 text-center"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition text-center"
             >
-              View My Work
+              View Projects
             </a>
-
             <button
               onClick={handleResumeClick}
-              className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-2 rounded-lg transition duration-300 text-center"
+              className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2 rounded-lg transition"
             >
-              Resume
+              Download Resume
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

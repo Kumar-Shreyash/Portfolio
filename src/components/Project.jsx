@@ -72,7 +72,9 @@ export const Project = () => {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-full max-w-md md:w-[400px] bg-white rounded-2xl shadow-lg p-6 hover:shadow-green-400 transition-shadow duration-300 cursor-pointer flex flex-col"
+            className="flex-shrink-0 w-full max-w-md md:w-[400px] bg-white rounded-2xl shadow-lg p-6
+              transform transition-transform duration-300 ease-in-out
+              hover:scale-105 hover:-translate-y-1 hover:shadow-green-400 cursor-pointer flex flex-col"
           >
             <img
               src={project.img}
@@ -103,7 +105,8 @@ export const Project = () => {
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center flex-1 text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
+                className="flex items-center justify-center flex-1 text-center bg-green-600 text-white py-2 rounded-lg
+                  hover:bg-green-700 hover:scale-105 transition-transform duration-300"
               >
                 <FiExternalLink className="mr-2 text-lg" />
                 Live Demo
@@ -112,7 +115,8 @@ export const Project = () => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center flex-1 text-center border border-green-600 text-green-600 py-2 rounded-lg hover:bg-green-600 hover:text-white transition"
+                className="flex items-center justify-center flex-1 text-center border border-green-600 text-green-600 py-2 rounded-lg
+                  hover:bg-green-600 hover:text-white hover:scale-105 transition-transform duration-300"
               >
                 <FaGithub className="mr-2 text-lg" />
                 GitHub

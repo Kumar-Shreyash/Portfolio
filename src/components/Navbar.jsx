@@ -78,7 +78,7 @@ export const Navbar = () => {
         }
       `}
       >
-        {["About", "Skills", "Projects", "Github", "Experience", "Contact"].map(
+        {["About", "Skills", "Projects", "Github", "Education", "Experience", "Contact"].map(
           (item) => (
             <a
               key={item}

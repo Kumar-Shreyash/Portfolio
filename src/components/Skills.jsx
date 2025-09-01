@@ -13,6 +13,8 @@ import vscode from "../assets/vscode.svg";
 import postman from "../assets/postman.svg";
 import git from "../assets/git.svg";
 import github from "../assets/github.svg";
+import vite from "../assets/vite.svg";
+import npm from "../assets/npm.svg";
 
 export const Skills = () => {
   const techStack = [
@@ -33,7 +35,17 @@ export const Skills = () => {
     { name: "Postman", img: postman },
     { name: "Git", img: git },
     { name: "GitHub", img: github },
+    { name: "Vite", img: vite },
+    { name: "NPM", img: npm },
   ];
+
+  const cardStyles = `
+    flex flex-col items-center text-gray-700 bg-white 
+    rounded-xl border border-transparent p-4 
+    hover:border-green-500 hover:shadow-xl hover:shadow-green-100
+    hover:scale-110 hover:-rotate-1
+    transition-all duration-300 ease-in-out
+  `;
 
   return (
     <div id="skills" className="p-10 max-w-5xl mx-auto font-sans">
@@ -48,10 +60,7 @@ export const Skills = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {techStack.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex flex-col items-center text-gray-700"
-            >
+            <div key={tech.name} className={cardStyles}>
               <img
                 src={tech.img}
                 alt={tech.name}
@@ -70,10 +79,7 @@ export const Skills = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {tools.map((tool) => (
-            <div
-              key={tool.name}
-              className="flex flex-col items-center text-gray-700"
-            >
+            <div key={tool.name} className={cardStyles}>
               <img
                 src={tool.img}
                 alt={tool.name}
