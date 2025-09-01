@@ -11,24 +11,24 @@ export const Github = () => {
       </h1>
 
       <div className="max-w-[900px] mx-auto mb-16">
-        <GitHubCalendar username="shreyash139-eren" />
+        <GitHubCalendar username="Kumar-Shreyash" />
       </div>
 
       <div className="flex flex-col md:flex-row gap-8 md:gap-12 max-w-6xl mx-auto px-4 justify-center">
         <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=shreyash139-eren&layout=compact&theme=tokyonight"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kumar-Shreyash&layout=compact&theme=tokyonight"
           alt="Top Langs"
           className="w-full md:w-2/5 max-w-[400px] rounded-lg shadow-lg"
         />
 
         <img
-          src="https://github-readme-stats.vercel.app/api?username=shreyash139-eren&show_icons=true&theme=tokyonight"
+          src="https://github-readme-stats.vercel.app/api?username=Kumar-Shreyash&show_icons=true&theme=tokyonight"
           alt="GitHub Stats"
           className="w-full md:w-2/5 max-w-[400px] rounded-lg shadow-lg"
         />
 
         <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=shreyash139-eren&theme=tokyonight"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=Kumar-Shreyash&theme=tokyonight"
           alt="GitHub Streak"
           className="w-full md:w-2/5 max-w-[400px] rounded-lg shadow-lg"
         />
