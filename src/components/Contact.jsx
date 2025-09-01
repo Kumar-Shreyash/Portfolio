@@ -98,7 +98,7 @@ export const Contact = () => {
               <FaEnvelope size={22} /> Mail
             </a>
             <a
-              href="https://github.com/shreyash139-eren"
+              href="https://github.com/Kumar-Shreyash"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-gray-800 hover:text-green-700 transition"
