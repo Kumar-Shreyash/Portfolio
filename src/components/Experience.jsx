@@ -91,7 +91,7 @@ export const Experience = () => {
         </h2>
 
         <div
-          className="bg-white rounded-3xl shadow-lg hover:shadow-2xl shadow-green-400 transition-all duration-300 p-8 md:p-12
+          className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 md:p-12
           hover:scale-[1.03] transform"
         >
           {/* Header */}
