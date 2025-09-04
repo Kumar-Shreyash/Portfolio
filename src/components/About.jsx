@@ -83,7 +83,7 @@ export const About = () => {
               onClick={handleResumeClick}
               className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition duration-300 ease-in-out text-lg"
             >
-              Download Resume
+              Resume
             </button>
           </div>
         </div>
