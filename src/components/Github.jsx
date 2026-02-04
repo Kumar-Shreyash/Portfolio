@@ -17,24 +17,24 @@ export const Github = () => {
 
       {/* GitHub Stat Cards */}
       <div className="flex flex-col md:flex-row flex-wrap gap-8 md:gap-12 max-w-6xl mx-auto px-4 justify-center">
-        {/* Top Languages */}
         <img
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kumar-Shreyash&layout=compact&theme=tokyonight"
           alt="Top Langs"
+          referrerPolicy="no-referrer"
           className="w-full md:w-2/5 max-w-[400px] rounded-xl shadow-lg hover:shadow-green-200 hover:scale-105 transition-transform duration-300"
         />
 
-        {/* GitHub Stats */}
         <img
           src="https://github-readme-stats.vercel.app/api?username=Kumar-Shreyash&show_icons=true&theme=tokyonight"
           alt="GitHub Stats"
+          referrerPolicy="no-referrer"
           className="w-full md:w-2/5 max-w-[400px] rounded-xl shadow-lg hover:shadow-green-200 hover:scale-105 transition-transform duration-300"
         />
 
-        {/* GitHub Streak */}
         <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=Kumar-Shreyash&theme=tokyonight"
+          src="https://streak-stats.demolab.com?user=Kumar-Shreyash&theme=tokyonight"
           alt="GitHub Streak"
+          referrerPolicy="no-referrer"
           className="w-full md:w-2/5 max-w-[400px] rounded-xl shadow-lg hover:shadow-green-200 hover:scale-105 transition-transform duration-300"
         />
       </div>

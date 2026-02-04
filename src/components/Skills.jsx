@@ -8,6 +8,9 @@ import nodejs from "../assets/node.svg";
 import express from "../assets/express.svg";
 import mongodb from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
+import python from "../assets/python.svg";
+import django from "../assets/django.svg";
+import go from "../assets/go.svg";
 
 import vscode from "../assets/vscode.svg";
 import postman from "../assets/postman.svg";
@@ -21,7 +24,10 @@ export const Skills = () => {
     { name: "HTML5", img: html },
     { name: "CSS3", img: css },
     { name: "JavaScript", img: js },
+    { name: "Python", img: python },
+    { name: "GO", img: go },
     { name: "React", img: react },
+    { name: "Django", img: django },
     { name: "Redux", img: redux },
     { name: "GSAP", img: gsap },
     { name: "Node.js", img: nodejs },
