@@ -1,6 +1,7 @@
 import habitHole from "../assets/habitHole.png";
 import onlyPlans from "../assets/onlyPlans.png";
 import skillBound from "../assets/skillBound.png";
+import anihen from "../assets/anihen.png";
 
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
@@ -59,6 +60,15 @@ export const Project = () => {
       techStack: ["NodeJs", "Express", "MongoDB", "React", "TailwindCSS"],
       liveLink: "https://skill-bound.netlify.app/",
       githubLink: "https://github.com/Kumar-Shreyash/Skill-Bound-Backend",
+    },
+    {
+      title: "AniHen",
+      img: anihen,
+      description:
+        "An Anime Streaming Web App that provides anime enthusiasts with a simple and user-friendly platform to explore, discover, and stream their favorite anime shows and movies.",
+      techStack: ["NodeJs", "Express", "MongoDB", "React", "TailwindCSS"],
+      liveLink: "https://anihen.netlify.app/",
+      githubLink: "https://github.com/shreyashsinha34-star/AniHen-git",
     },
   ];
 

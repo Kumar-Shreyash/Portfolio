@@ -94,7 +94,7 @@ export const Navbar = () => {
         `}
         >
           {[
-            "About",
+            "Home",
             "Skills",
             "Projects",
             "Github",

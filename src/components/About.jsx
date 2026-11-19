@@ -22,7 +22,7 @@ export const About = () => {
 
   return (
     <section
-      id="about"
+      id="home"
       className={`min-h-screen px-6 py-16 flex flex-col items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50 transition-opacity duration-1000 ease-in-out ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
@@ -48,7 +48,10 @@ export const About = () => {
           </h3>
 
           <p className="text-gray-700 text-lg max-w-xl mx-auto md:mx-0 leading-relaxed tracking-wide">
-            I’m passionate about building fast, accessible, and scalable web applications. With a strong foundation in JavaScript and modern web technologies, I strive to bring ideas to life with clean and maintainable code.
+            I’m passionate about building fast, accessible, and scalable web
+            applications. With a strong foundation in JavaScript and modern web
+            technologies, I strive to bring ideas to life with clean and
+            maintainable code.
           </p>
 
           {/* Skill Highlights */}
@@ -56,8 +59,15 @@ export const About = () => {
             {[
               { title: "Languages", skills: "JavaScript, TypeScript" },
               { title: "Frameworks", skills: "React, Node.js, Express" },
-              { title: "Tools", skills: "Git, GitHub, Vite, VS Code, Postman, MongoDB" },
-              { title: "Soft Skills", skills: "Problem-solving, Teamwork" },
+              {
+                title: "Tools",
+                skills: "Git, GitHub, Vite, VS Code, Postman, MongoDB",
+              },
+              {
+                title: "Soft Skills",
+                skills:
+                  "Problem-solving, Teamwork & Collaboration, Communication, Adaptability, Time Management, Ownership & Accountability",
+              },
             ].map(({ title, skills }) => (
               <div
                 key={title}
