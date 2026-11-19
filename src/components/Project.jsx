@@ -1,5 +1,5 @@
 import habitHole from "../assets/habitHole.png";
-import onlyPlans from "../assets/onlyPlans.png";
+import onlyPlans from "../assets/onlyplans.png";
 import skillBound from "../assets/skillBound.png";
 import anihen from "../assets/anihen.png";
 
